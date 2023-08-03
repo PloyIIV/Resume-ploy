@@ -1,26 +1,25 @@
-
+import undraw1 from "../assets/image/undraw1.png"
 function Passions () {
     const passionItems = [
         {
             title: 'Front-End',
             title2: 'Developer',
-            image: '../src/assets/image/undraw_Design_process_re_0dhf 1.png',
+            image: undraw1,
             language: '(Sass, Bootstrap, Tailwind)',
         },
         {
             title: 'Back-End',
             title2: 'Developer',
-            image: '../src/assets/image/undraw_Wireframing_re_q6k6 1.png',
+            image: '../src/assets/image/undraw2.png',
             language: '(NodeJS, Laravel, Codeigniter)',
         },
         {
             title: 'Front-End',
             title2: 'Developer',
-            image: '../src/assets/image/undraw_Detailed_analysis_re_tk6j 1.png',
+            image: '../src/assets/image/undraw3.png',
             language: '(Figma, Zeplin, Adobe XD)',
         },
     ]
-// "../assets/image/Vector.png"
     return (
         <div id="passions" className="w-screen flex justify-center ">
             <div className="w-full lg:w-4/5 flex items-center flex-col mt-10">
