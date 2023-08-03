@@ -1,4 +1,7 @@
 import undraw1 from "../assets/image/undraw1.png"
+import undraw2 from "../assets/image/undraw2.png"
+import undraw3 from "../assets/image/undraw3.png"
+
 function Passions () {
     const passionItems = [
         {
@@ -10,13 +13,13 @@ function Passions () {
         {
             title: 'Back-End',
             title2: 'Developer',
-            image: '../src/assets/image/undraw2.png',
+            image: undraw2,
             language: '(NodeJS, Laravel, Codeigniter)',
         },
         {
             title: 'Front-End',
             title2: 'Developer',
-            image: '../src/assets/image/undraw3.png',
+            image: undraw3,
             language: '(Figma, Zeplin, Adobe XD)',
         },
     ]

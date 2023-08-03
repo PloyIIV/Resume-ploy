@@ -1,25 +1,29 @@
-// import Vector from "../assets/image/Vector.png"
+import Vector from "../assets/image/Vector.png"
+import github from "../assets/image/github.png"
+import instagram from "../assets/image/instagram.png"
+import email from "../assets/image/github.png"
+import tel from "../assets/image/call.png"
 
 function ContactMe () {
 
     const contactItems = [
         {
-            image: '../src/assets/image/github.png',
+            image: github,
             name: 'Github',
             link: 'https://github.com/ployiiv'
         },
         {
-            image: '../src/assets/image/instagram.png',
+            image: instagram,
             name: 'Instagram',
             link: 'https://www.instagram.com/ployiiv'
         },
         {
-            image: '../src/assets/image/github.png',
+            image: email,
             name: 'Email',
             link: 'https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsdHGMVmfqWzkVftjlcLpVlcpSXRjfVHXThFsVkHDZMXqgJPrjRHZgxTDrLxbnVpkkxStlgq'
         },
         {
-            image: '../src/assets/image/call.png',
+            image: tel,
             name: 'Tel',
         },
     ]
@@ -35,7 +39,7 @@ function ContactMe () {
                             <div key={index} className="flex flex-col items-center mb-10">
                                 <div className="flex relative justify-center items-center">
                                     <img className="absolute" src={item.image} alt={item.name + ' icon'} />
-                                    <img src='../src/assets/image/Vector.png' alt="blue circle" />
+                                    <img src={Vector} alt="blue circle" />
                                 </div>
                                 <a href={item.link} className="tracking-widest text-2xl mt-5 font-semibold text-stone-600 hover:scale-110 hover:text-amber-600">{item.name}</a>
                              </div>

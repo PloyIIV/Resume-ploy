@@ -1,4 +1,5 @@
 import Navbar from "./Navbar.jsx"
+import littleGuy from "../assets/image/ssss.png"
 
 function Header() {
   return (
@@ -23,7 +24,7 @@ function Header() {
         </div>
 
         <div className="w-fit flex justify-center items-center">
-          <img className="w-11/12 md:max-w-full" src="../src/assets/image/ssss.png" alt="guy" />
+          <img className="w-11/12 md:max-w-full" src={littleGuy} alt="guy" />
         </div>
       </div>
 
