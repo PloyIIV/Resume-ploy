@@ -1,6 +1,6 @@
 import Vector from "../assets/image/Vector.png"
 import github from "../assets/image/github.png"
-import instagram from "../assets/image/instagram.png"
+import instagram from "../assets/image/Instagram.png"
 import email from "../assets/image/github.png"
 import tel from "../assets/image/call.png"
 
