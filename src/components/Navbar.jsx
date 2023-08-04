@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import burgerMenu from "../assets/image/menu-icon.png"
 
 function Navbar() {
   const navigate = useNavigate();
@@ -8,19 +9,23 @@ function Navbar() {
   const handleToggle = () => {
     setToggleMenu(!toggleMenu)
   }
+  const handleToggleOff = () => {
+    setToggleMenu(false)
+  }
 
   return (
-    <div className="flex">
+    <div className="flex" >
       {/* Hamburger menu */}
-      <div className="flex items-center mr-20 lg:hidden relative z-10">
-        <button onMouseOver={handleToggle}><img src="../src/image/menu-icon.png" className="active:scale-150" /></button>
+      <div className="flex items-center mr-20 lg:hidden relative">
+        <button onClick={handleToggle}><img src={burgerMenu} className="active:scale-150" /></button>
       </div>
       {toggleMenu && (
-          <div className="absolute flex flex-col right-5 top-16 w-[250px] bg-blue-300 p-1 rounded-2xl shadow-2xl shadow-blue-400">
-            <div className="p-5 bg-blue-50 text-blue-500 rounded-xl h-10 flex justify-center items-center mt-1 hover:scale-110 hover:shadow-lg hover:shadow-blue-400"><a href="#about">About</a></div>
-            <div className="p-5 bg-blue-50 text-blue-500 rounded-xl h-10 flex justify-center items-center mt-1 hover:scale-110 hover:shadow-lg hover:shadow-blue-400"><a href="#passions">Passions</a></div>
-            <div className="p-5 bg-blue-50 text-blue-500 rounded-xl h-10 flex justify-center items-center mt-1 hover:scale-110 hover:shadow-lg hover:shadow-blue-400"><a href="#portfolio">Portfolio</a></div>
-            <div className="p-5 bg-blue-50 text-blue-500 rounded-xl h-10 flex justify-center items-center mt-1 hover:scale-110 hover:shadow-lg hover:shadow-blue-400"><a href="#contact">Contact Me</a></div>
+          <div className="absolute flex flex-col right-3 top-2 w-[250px] bg-blue-50 p-1 rounded-2xl shadow-2xl shadow-blue-400" >
+            <button className="text-right mr-5 text-3xl" onClick={handleToggleOff}>✕</button>
+            <div className="p-5 bg-white text-blue-500 rounded-xl h-10 flex justify-center items-center mt-1 hover:scale-110 hover:shadow-lg hover:shadow-blue-400"><a href="#about">About</a></div>
+            <div className="p-5 bg-white text-blue-500 rounded-xl h-10 flex justify-center items-center mt-1 hover:scale-110 hover:shadow-lg hover:shadow-blue-400"><a href="#passions">Passions</a></div>
+            <div className="p-5 bg-white text-blue-500 rounded-xl h-10 flex justify-center items-center mt-1 hover:scale-110 hover:shadow-lg hover:shadow-blue-400"><a href="#portfolio">Portfolio</a></div>
+            <div className="p-5 bg-white text-blue-500 rounded-xl h-10 flex justify-center items-center mt-1 hover:scale-110 hover:shadow-lg hover:shadow-blue-400"><a href="#contact">Contact Me</a></div>
           </div>
         )}
       {/* Menu */}
