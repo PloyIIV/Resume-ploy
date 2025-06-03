@@ -185,8 +185,8 @@ function Navbar() {
         {/* <li className="mx-4 hover:text-blue-600">
           <a href="/#passions">Passions</a>
         </li> */}
-        <li className="mx-4 hover:text-blue-600">
-          <a href="/certificate">Certificate</a>
+        <li onClick={() => navigate('/certificate')} className="mx-4 hover:text-blue-600">
+          <p>Certificate</p>
         </li>
         <li className="mx-4">
           <button className="bg-blue-500 p-2 px-5 px text-white rounded-2xl font-semibold hover:bg-amber-500 hover:scale-105">
