@@ -7,14 +7,16 @@ import Passions from "./components/Passions";
 import Portfolio from "./components/Portfolio";
 import ContactMe from "./components/ContactMe";
 import Footer from "./components/Footer";
+import Certificate from "./components/Certificate/Certificate";
 
 function App() {
 
   return (
-    <div className="w-screen bg-white m-0 box-border">
+    <div className="w-screen bg-blue-950 m-0 box-border">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/certificate" element={<Certificate />} />
           {/* <Route path="/passions" element={<Passions />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<ContactMe />} /> 
